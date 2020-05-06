@@ -1,0 +1,15 @@
+Arrays
+Types of Arrays:
+    Fixed Size: C,C++
+    Stack Allocated Arrays:
+        int arr[10]
+        int arr[] = {10,20,30}
+    Heap Allocated:
+        int *arr = new int[10]
+        In java, the arrays are always stored on a heap
+    Dynamic Sized: Python list, Java ArrayList, C++ Vector
+
+    Dynamic Sized arrays can act as fixed size arrays as well, therefore, recommended over fixed size
+
+Operations of Arrays:
+    You know it
