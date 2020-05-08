@@ -50,7 +50,6 @@ Testcase 3: The array is sorted (10, 20, 30, 14) is not sorted and rotated as 14
 import sys
 def checkRotatedAndSorted(arr,n):
     min1 = sys.maxsize 
-    max1 = -sys.maxsize - 1
     m_ind = -1
     for i in range(n): 
         if arr[i]< min1: 
