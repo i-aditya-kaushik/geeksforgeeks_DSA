@@ -35,3 +35,5 @@ Testcase 2: 2 4 6 8 10 12 14 16 18 20  when rotated by 3 elements, it becomes 8 
 
 ** For More Input/Output Examples Use 'Expected Output' option **
 """
+def rotateArr(A,D,N):
+    return(A[D:]+A[:D])
