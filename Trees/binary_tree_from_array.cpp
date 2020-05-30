@@ -3,7 +3,7 @@ Node *createTree(int parent[], int n)
     unordered_map<int,Node*> map;
     for(int i=0;i<n;i++)
     {
-        Node * newnode = new Node(i);
+        Node* newnode = new Node(i);
         map[i] = newnode;
     }
     Node* root;
