@@ -1,4 +1,4 @@
-void DFS(int index,vector<int> adj[],int vis[],int V,int p,bool &val){//p -> parent of the index
+void DFS(int index,vector<int> adj[],int vis[],int V,int p,bool &val){
   vis[index] = true;
   for(auto i=adj[index].begin();i!=adj[index].end();i++){
     if(vis[*i] == 0){
@@ -7,7 +7,7 @@ void DFS(int index,vector<int> adj[],int vis[],int V,int p,bool &val){//p -> par
       if(val)
         return;
     }
-    else if(vis[*i] == 1 && p != *i){// if(u,v) -> both are visited && v is not the parent of u(index)
+    else if(vis[*i] == 1 && p != *i){
       val = true;
       return;
     }
