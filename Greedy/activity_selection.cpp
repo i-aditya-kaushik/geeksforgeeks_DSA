@@ -1,20 +1,19 @@
-bool mycomp(pair<int,int>&a, pair<int,int>&b){
-    return a.second<b.second;
-}
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
 
-int activitySelection(int start[], int end[], int n){
-    vector<pair<int,int>> arr;
+int main(){
+    long long int n,ele;
+    cin>>n;
+    vector<long long int> q;
     for(int i=0;i<n;i++){
-        arr.push_back(make_pair(start[i],end[i]));
+        cin>>ele;
+        q.push_back(ele);
     }
-    sort(arr.begin(),arr.end(),mycomp);
-    int x=0;
-    int count =1;
-    for(int i=1;i<n;i++){
-        if(arr[x].second<=arr[i].first){
-            x=i;
-            count+=1;
-        }
+    sort(q.begin(),q.end());
+    cout<<endl<<endl<<endl<<"--------------------------------------------------------------ANSWER------------------------------------"<<endl;
+    for(auto it= q.begin();it!=q.end();it++){
+        cout<<*it<<" ";
     }
-    return(count);
+    return 0;
 }
